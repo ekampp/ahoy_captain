@@ -38,7 +38,7 @@ module AhoyCaptain
 
       def percentage
         begin
-          diff = value.current - value.compared_to
+          diff = value.current.to_f - value.compared_to.to_f
           if diff.zero?
             return 0
           end
